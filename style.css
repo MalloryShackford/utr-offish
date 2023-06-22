@@ -297,6 +297,9 @@ hr {
 	padding-top: 2.5rem;
 }
 
+.column > p {
+	font-weight: bold;
+}
 .column > p,
 .span {
 	display: block;
@@ -333,7 +336,7 @@ hr {
 	text-align: center;
 }
 #about > img {
-	width: 50%;
+	width: 70%;
 }
 @media screen and (min-width: 800px) {
 	.banner {
@@ -351,10 +354,11 @@ hr {
 		text-align: start;
 		margin-left: 2rem;
 	}
-	.about > img {
+	#about > img {
 		padding: 1rem;
 		margin-right: 1rem;
 		border-radius: 5px;
+		width: 50%;
 	}
 }
 /* Services Section */
@@ -384,7 +388,15 @@ p {
 
 /* Footer | Contact Section */
 
-#contact h3 {
+#contact h3,
+h2 {
+	text-align: center;
+}
+#contact h2 {
+	font-size: 1rem;
+	text-align: center;
+}
+#contact span {
 	text-align: center;
 }
 
@@ -408,6 +420,15 @@ p {
 	padding: 0.25rem 0.5rem;
 	margin-top: 1rem;
 	font-family: "Open Sans", sans-serif;
+	border-radius: 5px;
+}
+
+textarea {
+	margin-top: 1rem;
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.2);
+	font-family: "Open Sans", sans-serif;
+	border: 2px solid black;
 }
 .copyright {
 	padding-top: 3rem;
@@ -421,7 +442,8 @@ p {
 		display: flex;
 		flex: 50%;
 	}
-	.footer h3 {
+	.footer h3,
+	h2 {
 		font-size: 3rem;
 		margin-left: 10rem;
 	}
